@@ -1,4 +1,14 @@
-Sample algorithm:
+To-do
+
+change pokeballs after choice
+add in damage numbers
+
+done!?!?!?
+
+
+
+
+OG algorithm:
 
 1. Ask computer to return a value of rock, paper or scissors, chosen at random.
 

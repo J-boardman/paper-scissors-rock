@@ -1,13 +1,69 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Paper Scissors Rock!!!</title>
+        <title>Someone wants to battle!</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
     </head>
 
-    <body>
-        <h1>Paper Scissors Rock!!!</h1>
-        <script src="script.js"></script>
+    <body class="">
+        <div class="you">
+            <div class="topbar">
+                <div>You</div>
+                <div>HP:
+                    <span class="hidden">___</span>
+                    <span class="pHP"></span>
+                </div>
+            </div>
+            <div class="playerChoice">
+                <img src="/img/superball.png" alt="Player's pokeball" class="sball">
+            </div>
+        </div>
+
+        <div class="game">
+            <h2 class="opponents-name"></h2>
+             <p class="results">
+
+             </p>
+            <h3>Choose your pokemon below:</h3>
+            
+        </div>
+
+        <div class="opponent">
+            <div class="topbar">
+                <div class="computerName"></div>
+                <div>HP:
+                    <span class="hidden">___</span>
+                    <span class="oHP"></span>
+                </div>
+            </div>
+            <div class="computerChoice">
+                <img src="/img/ultra-ball.png" alt="Computer's Pokeball" class="uball">
+            </div>
+        </div>
+        
+        <div id="psychic" class="hide">
+            <img src="/img/mew.png" alt="Mew" class="psychicIcon">
+        </div>
+
+        
+        <div class="fire">
+            <img src="/img/charmander.png" alt="charmander" class="fireIcon">
+        </div>
+        
+        <div class="water">
+            <img src="/img/squirtle.png" alt="squirtle" class="waterIcon">
+        </div>
+        
+        <div class="grass">
+                <img src="/img/bullbasaur.png" alt="Bulbasaur" class="grassIcon">
+        </div>
+
+        <div class="footer">
+           <div class="refer"> Icons made by <a href="https://www.flaticon.com/authors/roundicons-freebies" title="Roundicons Freebies">Roundicons Freebies</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+           </div>
+            <button class="secret">?</button>
+        </div>
     </body>
 </html>

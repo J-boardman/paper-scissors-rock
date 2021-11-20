@@ -1,4 +1,136 @@
 html{
-    background-color: rgb(30,30,30);
+    font-family: Verdana, sans-serif;
+   background-color: rgb(30,30,30);
+   color: white;
+   font-size: 22px;
+}
+
+
+/* UI ELEMENTS */
+body{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 12.5vw 25vw 25vw 25vw 12.5vw;
+    grid-template-rows: 45vh 50vh 5vh;
+    grid-template-areas: 
+    "l you game opponent r"
+    "l fire water grass r"
+    "l footer footer footer r"
+}
+
+.new{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1vw 24.5vw 24.5vw 24.5vw 24.5vw 1vw;
+    grid-template-rows: 45vh 50vh 5vh;
+    grid-template-areas: 
+    "l you game game opponent r"
+    "l psychic fire water grass r"
+    "l footer footer footer footer r"
+}
+
+.game{
+    grid-area: game;
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.you, .opponent{
+    grid-area: you;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.playerChoice, .computerChoice{
+    margin: auto;
+}
+
+
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+.player-lives{
+    padding: 0 40px;    
+}
+
+.opponent{
+    grid-area: opponent;
+    margin: 20px;
+}
+
+.footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+}
+.secret{
+    font-size: large;
+}
+.water, .fire, .grass, .psychic{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    color: black;
+   
+}
+.hide{
+    display: none;
+}
+/* GENERAL DECORATING */
+
+.water{
+    grid-area: water;
+    background-color: rgb(86,156,214);
+}
+
+.fire{
+    grid-area: fire;
+    background-color: rgb(206,127,72);;
+}
+
+.grass{
+    grid-area: grass;
+    background-color: rgb(160, 200, 140);
+}
+
+.psychic{
+    grid-area: psychic;
+    background-color: plum;
+}
+
+.hidden{
+    color: rgb(30,30,30);
+}
+
+.psychicIcon, .fireIcon, .waterIcon, .grassIcon{
+    display: flex;
+    max-width: 80%;
+}
+
+.sball, .uball{
+    width: 50%;
+    margin: auto;
+}
+
+.sball{
+    margin-left: 109px;
+}
+
+.uball{
+    margin-left: 109px;
+}
+
+.refer a{
     color: white;
 }
