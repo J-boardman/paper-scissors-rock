@@ -1,5 +1,7 @@
 To-do
 
+https://j-boardman.github.io/paper-scissors-rock/
+
 change pokeballs after choice
 add in damage numbers
 
